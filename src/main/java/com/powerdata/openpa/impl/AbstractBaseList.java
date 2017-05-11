@@ -6,36 +6,41 @@ package com.powerdata.openpa.impl;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
+import java.util.AbstractList;
 import com.powerdata.openpa.BaseList;
 import com.powerdata.openpa.BaseObject;
 
-import java.util.AbstractList;
+public abstract class AbstractBaseList<T extends BaseObject> extends AbstractList<T> implements BaseList<T>
+{
+	protected int _size;
+	
+	protected AbstractBaseList(int size)
+	{
+		_size = size;
+	}
+	
+	protected AbstractBaseList()
+	{
+		_size = 0;
+	}
 
-public abstract class AbstractBaseList<T extends BaseObject> extends AbstractList<T> implements BaseList<T> {
-    protected int _size;
+	@Override
+	public int size()
+	{
+		return _size;
+	}
+	
+	@Override
+	public boolean objEquals(int ndx, Object obj)
+	{
+		BaseObject o = (BaseObject) obj;
+		return getListMeta().equals(o.getList().getListMeta()) && getKey(ndx) == o.getKey();
+	}
 
-    protected AbstractBaseList(int size) {
-        _size = size;
-    }
-
-    protected AbstractBaseList() {
-        _size = 0;
-    }
-
-    @Override
-    public int size() {
-        return _size;
-    }
-
-    @Override
-    public boolean objEquals(int ndx, Object obj) {
-        BaseObject o = (BaseObject) obj;
-        return getListMeta().equals(o.getList().getListMeta()) && getKey(ndx) == o.getKey();
-    }
-
-    @Override
-    public int objHash(int ndx) {
-        return BaseList.CalcListHash(getListMeta(), getKey(ndx));
-    }
-
+	@Override
+	public int objHash(int ndx)
+	{
+		return BaseList.CalcListHash(getListMeta(), getKey(ndx));
+	}
+	
 }

@@ -6,11 +6,13 @@ package com.powerdata.openpa;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public class TwoTermDCLine extends TwoTermDev {
+public class TwoTermDCLine extends TwoTermDev
+{
 
-    public TwoTermDCLine(TwoTermDCLineList list, int ndx) {
-        super(list, ndx);
-        // TODO Auto-generated constructor stub
-    }
+	public TwoTermDCLine(TwoTermDCLineList list, int ndx)
+	{
+		super(list, ndx);
+		// TODO Auto-generated constructor stub
+	}
 
 }

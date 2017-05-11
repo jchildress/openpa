@@ -10,12 +10,13 @@ import com.powerdata.openpa.PAModelException;
 
 //import java.io.PrintWriter;
 
-public interface MatrixDebug<T> {
+public interface MatrixDebug<T>
+{
 //	protected Matrix<T> _matrix;
 //	public MatrixDebug(Matrix<T> matrix) {_matrix = matrix;}
 //	public void setMatrix(Matrix<T> matrix) {_matrix = matrix;}
-
-    //	public void dump(PrintWriter pw)
+	
+//	public void dump(PrintWriter pw)
 //	{
 //		int ncol = _matrix.getColumnCount(), nrow = _matrix.getRowCount();
 //		for(int ic=0; ic < ncol; ++ic)
@@ -36,8 +37,8 @@ public interface MatrixDebug<T> {
 //		
 //	}
 //
-    abstract public String getRowID(int ir) throws PAModelException;
+	abstract public String getRowID(int ir) throws PAModelException;
 
-    abstract public String getColumnID(int col) throws PAModelException;
-
+	abstract public String getColumnID(int col) throws PAModelException;
+	
 }

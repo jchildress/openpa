@@ -6,6 +6,7 @@ package com.powerdata.openpa.pwrflow;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public enum BusType {
-    PQ, PV, Reference;
+public enum BusType
+{
+	PQ,PV,Reference;
 }

@@ -6,11 +6,10 @@ package com.powerdata.openpa.tools.psmfmt;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public enum CaseNode implements VersionedDoc {
-    ID, Ang, Mag;
+public enum CaseNode implements VersionedDoc
+{
+	ID,Ang,Mag;
 
-    @Override
-    public String getVersion() {
-        return "1.11";
-    }
+	@Override
+	public String getVersion() {return "1.11";}
 }

@@ -6,11 +6,10 @@ package com.powerdata.openpa.tools.psmfmt;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public enum CaseSVC implements VersionedDoc {
-    ID, Mode, MVArSetPoint, VoltageSetpoint, InService;
+public enum CaseSVC implements VersionedDoc
+{
+	ID, Mode, MVArSetPoint, VoltageSetpoint, InService;
 
-    @Override
-    public String getVersion() {
-        return "1.9";
-    }
+	@Override
+	public String getVersion() {return "1.9";}
 }

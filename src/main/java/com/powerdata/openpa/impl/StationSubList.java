@@ -11,21 +11,25 @@ import com.powerdata.openpa.Station;
 import com.powerdata.openpa.StationList;
 
 public class StationSubList extends GroupSubList<Station> implements
-        StationList {
+		StationList
+{
 
-    public StationSubList(StationList src, int[] ndx) {
-        super(src, ndx);
-        // TODO Auto-generated constructor stub
-    }
+	public StationSubList(StationList src, int[] ndx)
+	{
+		super(src, ndx);
+		// TODO Auto-generated constructor stub
+	}
 
-    @Override
-    public Station get(int index) {
-        return new Station(this, index);
-    }
+	@Override
+	public Station get(int index)
+	{
+		return new Station(this, index);
+	}
 
-    @Override
-    public ListMetaType getListMeta() {
-        return ListMetaType.Station;
-    }
+	@Override
+	public ListMetaType getListMeta()
+	{
+		return ListMetaType.Station;
+	}
 
 }

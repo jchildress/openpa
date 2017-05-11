@@ -6,10 +6,9 @@ package com.powerdata.openpa;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public interface ModelBuilder {
-    public boolean hasErrors();
-
-    public String[] getErrors();
-
-    PAModel load() throws PAModelException;
+public interface ModelBuilder
+{
+	public boolean hasErrors();
+	public String[] getErrors();
+	PAModel load() throws PAModelException;
 }

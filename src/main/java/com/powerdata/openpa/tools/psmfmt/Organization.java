@@ -6,11 +6,10 @@ package com.powerdata.openpa.tools.psmfmt;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public enum Organization implements VersionedDoc {
-    ID, Name;
+public enum Organization implements VersionedDoc
+{
+	ID, Name;
 
-    @Override
-    public String getVersion() {
-        return "1.10";
-    }
+	@Override
+	public String getVersion() {return "1.10";}
 }

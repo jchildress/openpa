@@ -6,6 +6,7 @@ package com.powerdata.openpa.tools.psmfmt;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-interface VersionedDoc {
-    String getVersion();
+interface VersionedDoc
+{
+	String getVersion();
 }

@@ -6,20 +6,24 @@ package com.powerdata.openpa;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public class VoltageLevel extends Group {
-    protected VoltageLevelList _list;
+public class VoltageLevel extends Group 
+{
+	protected VoltageLevelList _list;
+	
+	public VoltageLevel(VoltageLevelList list, int ndx)
+	{
+		super(list, ndx);
+		_list = list;
+	}
 
-    public VoltageLevel(VoltageLevelList list, int ndx) {
-        super(list, ndx);
-        _list = list;
-    }
-
-    public float getBaseKV() throws PAModelException {
-        return _list.getBaseKV(_ndx);
-    }
-
-    public void setBaseKV(float k) throws PAModelException {
-        _list.setBaseKV(_ndx, k);
-    }
-
+	public float getBaseKV() throws PAModelException
+	{
+		return _list.getBaseKV(_ndx);
+	}
+	
+	public void setBaseKV(float k) throws PAModelException
+	{
+		_list.setBaseKV(_ndx, k);
+	}
+	
 }

@@ -6,8 +6,10 @@ package com.powerdata.openpa;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public class Line extends ACBranch {
-    public Line(LineList linelist, int ndx) {
-        super(linelist, ndx);
-    }
+public class Line extends ACBranch 
+{
+	public Line(LineList linelist, int ndx)
+	{
+		super(linelist, ndx);
+	}
 }

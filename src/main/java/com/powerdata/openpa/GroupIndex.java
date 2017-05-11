@@ -10,34 +10,30 @@ import java.util.List;
 
 /**
  * Partition buses into groupings
- *
+ * 
  * @author chris@powerdata.com
+ *
  */
-public interface GroupIndex {
-    public static GroupIndex Empty = new GroupIndex() {
-        @Override
-        public int size() {
-            return 0;
-        }
+public interface GroupIndex
+{
+	int size();
 
-        @Override
-        public int getGrp(int index) {
-            return -1;
-        }
+	/** get group index for a specific bus index */
+	int getGrp(int index);
 
-        @Override
-        public List<int[]> map() {
-            return null;
-        }
+	List<int[]> map();
+	
+	
+	public static GroupIndex Empty = new GroupIndex()
+	{
+		@Override
+		public int size() {return 0;}
 
-    };
+		@Override
+		public int getGrp(int index) {return -1;}
 
-    int size();
+		@Override
+		public List<int[]> map() {return null;}
 
-    /**
-     * get group index for a specific bus index
-     */
-    int getGrp(int index);
-
-    List<int[]> map();
+	};
 }

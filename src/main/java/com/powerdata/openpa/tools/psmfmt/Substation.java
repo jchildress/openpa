@@ -6,11 +6,10 @@ package com.powerdata.openpa.tools.psmfmt;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public enum Substation implements VersionedDoc {
-    ID, Name, Organization, ControlArea, LoadArea;
+public enum Substation implements VersionedDoc
+{
+	ID, Name, Organization, ControlArea, LoadArea;
 
-    @Override
-    public String getVersion() {
-        return "1.10";
-    }
+	@Override
+	public String getVersion() {return "1.10";}
 }

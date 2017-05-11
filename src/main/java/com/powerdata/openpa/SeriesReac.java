@@ -6,9 +6,11 @@ package com.powerdata.openpa;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public class SeriesReac extends ACBranch {
+public class SeriesReac extends ACBranch
+{
 
-    public SeriesReac(SeriesReacList list, int ndx) {
-        super(list, ndx);
-    }
+	public SeriesReac(SeriesReacList list, int ndx)
+	{
+		super(list, ndx);
+	}
 }

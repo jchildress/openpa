@@ -6,8 +6,10 @@ package com.powerdata.openpa;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public class ShuntReactor extends FixedShunt {
-    public ShuntReactor(ShuntReacList list, int ndx) {
-        super(list, ndx);
-    }
+public class ShuntReactor extends FixedShunt
+{
+	public ShuntReactor(ShuntReacList list, int ndx)
+	{
+		super(list, ndx);
+	}
 }

@@ -6,8 +6,8 @@ package com.powerdata.openpa.pwrflow;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public interface Monitor {
-    boolean test();
-
-    Monitor act();
+public interface Monitor
+{
+	boolean test();
+	Monitor act();
 }

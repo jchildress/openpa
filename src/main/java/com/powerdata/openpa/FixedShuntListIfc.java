@@ -6,14 +6,15 @@ package com.powerdata.openpa;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public interface FixedShuntListIfc<T extends FixedShunt> extends OneTermDevListIfc<T> {
+public interface FixedShuntListIfc<T extends FixedShunt> extends OneTermDevListIfc<T>
+{
 
-    float getB(int ndx) throws PAModelException;
+	float getB(int ndx) throws PAModelException;
 
-    void setB(int ndx, float b) throws PAModelException;
-
-    float[] getB() throws PAModelException;
-
-    void setB(float[] b) throws PAModelException;
+	void setB(int ndx, float b) throws PAModelException;
+	
+	float[] getB() throws PAModelException;
+	
+	void setB(float[] b) throws PAModelException;
 
 }

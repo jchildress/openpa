@@ -6,6 +6,7 @@ package com.powerdata.openpa.psseraw;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public enum PsseFieldType {
-    String, Integer, Float;
+public enum PsseFieldType
+{
+	String, Integer, Float;
 }

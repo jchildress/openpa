@@ -6,27 +6,31 @@ package com.powerdata.openpa;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public class PAModelException extends Exception {
-    private static final long serialVersionUID = 1L;
+public class PAModelException extends Exception 
+{
+	private static final long	serialVersionUID	= 1L;
 
-    public PAModelException() {
-    }
+	public PAModelException() {}
+	
+	public PAModelException(String message)
+	{
+		super(message);
+	}
 
-    public PAModelException(String message) {
-        super(message);
-    }
+	public PAModelException(Throwable cause)
+	{
+		super(cause);
+	}
 
-    public PAModelException(Throwable cause) {
-        super(cause);
-    }
+	public PAModelException(String message, Throwable cause)
+	{
+		super(message, cause);
+	}
 
-    public PAModelException(String message, Throwable cause) {
-        super(message, cause);
-    }
-
-    public PAModelException(String message, Throwable cause,
-                            boolean enableSuppression, boolean writableStackTrace) {
-        super(message, cause, enableSuppression, writableStackTrace);
-    }
+	public PAModelException(String message, Throwable cause,
+			boolean enableSuppression, boolean writableStackTrace)
+	{
+		super(message, cause, enableSuppression, writableStackTrace);
+	}
 
 }

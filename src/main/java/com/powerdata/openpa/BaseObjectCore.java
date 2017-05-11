@@ -6,9 +6,8 @@ package com.powerdata.openpa;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public interface BaseObjectCore {
-    /**
-     * get Index within master list owned by PAModel
-     */
-    int getIndex();
+public interface BaseObjectCore
+{
+	/** get Index within master list owned by PAModel */
+	int getIndex();
 }

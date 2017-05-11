@@ -6,11 +6,10 @@ package com.powerdata.openpa.tools.psmfmt;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public enum RatioTapChanger implements VersionedDoc {
-    ID, Name, TransformerWinding, TapNode, MinTap, MaxTap, NeutralTap, LowStep, HighStep, StepSize, MinKV, MaxKV, NeutralKV;
-
-    @Override
-    public String getVersion() {
-        return "1.10";
-    }
+public enum RatioTapChanger implements VersionedDoc
+{
+	ID, Name, TransformerWinding, TapNode, MinTap, MaxTap, NeutralTap, LowStep, HighStep, StepSize, MinKV, MaxKV, NeutralKV;
+	
+	@Override
+	public String getVersion() {return "1.10";}
 }

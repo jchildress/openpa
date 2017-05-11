@@ -6,11 +6,10 @@ package com.powerdata.openpa.tools.psmfmt;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public enum CaseSeriesCapacitor implements VersionedDoc {
-    ID, FromMW, FromMVAr, ToMW, ToMVAr, InService;
+public enum CaseSeriesCapacitor implements VersionedDoc
+{
+	ID, FromMW, FromMVAr, ToMW, ToMVAr, InService;
 
-    @Override
-    public String getVersion() {
-        return "1.9";
-    }
+	@Override
+	public String getVersion() {return "1.9";}
 }

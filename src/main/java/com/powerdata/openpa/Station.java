@@ -6,12 +6,14 @@ package com.powerdata.openpa;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public class Station extends Group {
-    protected StationList _list;
-
-    public Station(StationList list, int ndx) {
-        super(list, ndx);
-        _list = list;
-    }
+public class Station extends Group
+{
+	protected StationList _list;
+	
+	public Station(StationList list, int ndx)
+	{
+		super(list, ndx);
+		_list = list;
+	}
 
 }

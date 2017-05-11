@@ -6,11 +6,10 @@ package com.powerdata.openpa.tools.psmfmt;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public enum CaseRatioTapChanger implements VersionedDoc {
-    ID, Ratio, LTCEnable, TapPosition;
+public enum CaseRatioTapChanger implements VersionedDoc
+{
+	ID, Ratio, LTCEnable, TapPosition;
 
-    @Override
-    public String getVersion() {
-        return "1.9";
-    }
+	@Override
+	public String getVersion() {return "1.9";}
 }

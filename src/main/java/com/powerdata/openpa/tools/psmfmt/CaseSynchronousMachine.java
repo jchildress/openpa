@@ -6,11 +6,10 @@ package com.powerdata.openpa.tools.psmfmt;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public enum CaseSynchronousMachine implements VersionedDoc {
-    ID, SynchronousMachineOperatingMode, AVRMode, KVSetPoint, MVArSetpoint, MVAr, InService;
+public enum CaseSynchronousMachine implements VersionedDoc
+{
+	ID, SynchronousMachineOperatingMode, AVRMode, KVSetPoint, MVArSetpoint, MVAr, InService;
 
-    @Override
-    public String getVersion() {
-        return "1.9";
-    }
+	@Override
+	public String getVersion() {return "1.9";}
 }

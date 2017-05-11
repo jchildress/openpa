@@ -6,11 +6,10 @@ package com.powerdata.openpa.tools.psmfmt;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public enum GeneratingUnit implements VersionedDoc {
-    ID, Name, MinOperatingMW, MaxOperatingMW, GeneratingUnitType, GenControlMode;
+public enum GeneratingUnit implements VersionedDoc
+{
+	ID,Name,MinOperatingMW,MaxOperatingMW,GeneratingUnitType,GenControlMode;
 
-    @Override
-    public String getVersion() {
-        return "1.10";
-    }
+	@Override
+	public String getVersion() {return "1.10";}
 }

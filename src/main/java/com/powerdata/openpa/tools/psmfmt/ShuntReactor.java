@@ -6,11 +6,10 @@ package com.powerdata.openpa.tools.psmfmt;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public enum ShuntReactor implements VersionedDoc {
-    ID, Name, Node, MVAr;
+public enum ShuntReactor implements VersionedDoc
+{
+	ID, Name, Node, MVAr;
 
-    @Override
-    public String getVersion() {
-        return "1.10";
-    }
+	@Override
+	public String getVersion() {return "1.10";}
 }

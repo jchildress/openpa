@@ -6,8 +6,10 @@ package com.powerdata.openpa;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public class SeriesCap extends ACBranch {
-    public SeriesCap(SeriesCapList list, int ndx) {
-        super(list, ndx);
-    }
+public class SeriesCap extends ACBranch
+{
+	public SeriesCap(SeriesCapList list, int ndx)
+	{
+		super(list, ndx);
+	}
 }

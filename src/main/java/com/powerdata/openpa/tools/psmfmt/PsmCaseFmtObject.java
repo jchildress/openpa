@@ -6,13 +6,12 @@ package com.powerdata.openpa.tools.psmfmt;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
-public enum PsmCaseFmtObject implements VersionedDoc {
-    CaseParameter, ControlArea, LoadAreaCurve, Load, GeneratingUnit,
-    SynchronousMachine, ShuntCapacitor, ShuntReactor, SVC,
-    RatioTapChanger, PhaseTapChanger, Switch, Line, SeriesCapacitor,
-    SeriesReactor, TransformerWinding, Node;
-
-    public String getVersion() {
-        return "1.9";
-    }
+public enum PsmCaseFmtObject implements VersionedDoc
+{
+	CaseParameter,ControlArea,LoadAreaCurve,Load,GeneratingUnit,
+	SynchronousMachine,ShuntCapacitor,ShuntReactor,SVC,
+	RatioTapChanger,PhaseTapChanger,Switch, Line, SeriesCapacitor,
+	SeriesReactor, TransformerWinding, Node;
+	
+	public String getVersion() {return "1.9";}
 }

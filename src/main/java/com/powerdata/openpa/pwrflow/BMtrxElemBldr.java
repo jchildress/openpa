@@ -6,29 +6,30 @@ package com.powerdata.openpa.pwrflow;
  * See full license at https://powerdata.github.io/openpa/LICENSE.md
  */
 
+import java.util.AbstractList;
 import com.powerdata.openpa.tools.LinkNet;
 
-import java.util.AbstractList;
-
 @Deprecated
-public abstract class BMtrxElemBldr extends AbstractList<com.powerdata.openpa.pwrflow.BMtrxElemBldr.BMtrxElem> {
-    protected int _size;
+public abstract class BMtrxElemBldr extends AbstractList<com.powerdata.openpa.pwrflow.BMtrxElemBldr.BMtrxElem>
+{
+	public interface BMtrxElem
+	{
+		float getFromSelfB();
+		float getToSelfB();
+		float getTransferB();
+	}
 
-    public BMtrxElemBldr(LinkNet adj) {
-        _size = adj.getBranchCount();
-    }
+	protected int _size;
+	
+	public BMtrxElemBldr(LinkNet adj)
+	{
+		_size = adj.getBranchCount();
+	}
 
-    @Override
-    public int size() {
-        return _size;
-    }
-
-    public interface BMtrxElem {
-        float getFromSelfB();
-
-        float getToSelfB();
-
-        float getTransferB();
-    }
+	@Override
+	public int size()
+	{
+		return _size;
+	}
 
 }

@@ -13,6 +13,7 @@ import com.powerdata.openpa.PAModelException;
  * mismatch calculations
  */
 @FunctionalInterface
-interface ActiveDataAccess {
-    float[] get() throws PAModelException;
+interface ActiveDataAccess
+{
+	float[] get() throws PAModelException;
 }
